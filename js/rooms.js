@@ -1,6 +1,6 @@
 $(document).ready(function(){
   let container = document.querySelector('.frame');
-  const RADIUS = 300;
+  const RADIUS = 200;
 
   document.addEventListener('mousemove', function (event) {
    let x = event.clientX;
