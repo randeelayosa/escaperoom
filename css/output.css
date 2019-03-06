@@ -1,0 +1,104 @@
+@keyframes walk-right {
+  0% {
+    transform: scale(1) translate(0, 0); }
+  25% {
+    transform: scale(1.5) translate(40vw, -100px); }
+  50% {
+    transform: scale(2) translate(60vw, -200px); }
+  75% {
+    transform: scale(2.5) translate(80vw, -300px); }
+  100% {
+    transform: scale(3) translate(100vw, -300px); } }
+@keyframes walk-left {
+  0% {
+    transform: scale(1) translate(0, 0); }
+  25% {
+    transform: scale(1.5) translate(-40vw, -100px); }
+  50% {
+    transform: scale(2) translate(-60vw, -200px); }
+  75% {
+    transform: scale(2.5) translate(-80vw, -300px); }
+  100% {
+    transform: scale(3) translate(-100vw, -300px); } }
+@keyframes house-grow {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(3); } }
+body {
+  height: 100vh;
+  background-image: linear-gradient(#666666, #000);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.trees img {
+  position: fixed;
+  bottom: 0px; }
+  .trees img:nth-child(odd) {
+    right: 0;
+    margin-right: 30px;
+    animation: walk-right 30s linear forwards; }
+  .trees img:nth-child(even) {
+    left: 0;
+    margin-right: 30px;
+    animation: walk-left 30s linear forwards; }
+  .trees img:nth-child(3n) {
+    left: 100px;
+    bottom: 500px; }
+  .trees img:nth-child(4n) {
+    right: 100px; }
+  .trees img:nth-child(5n) {
+    left: 200px; }
+
+.pairOne {
+  width: 60vw; }
+
+.pairTwo {
+  width: 50vw; }
+
+.pairThree {
+  width: 40vw; }
+
+.pairFour {
+  width: 30vw; }
+
+.pairFive {
+  width: 20vw; }
+
+.flip {
+  transform: rotateY(-180deg); }
+
+.stagger20 {
+  left: 20%; }
+
+.stagger40 {
+  right: 40%; }
+
+.stagger60 {
+  left: 60%; }
+
+.house-front {
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  animation: house-grow 40s forwards linear; }
+  .house-front img {
+    position: absolute;
+    width: 300px;
+    bottom: 0;
+    margin-right: 20px; }
+    .house-front img:nth-child(4) {
+      right: 0; }
+  .house-front #house {
+    left: 30%;
+    top: 0; }
+  .house-front #middle {
+    left: 10vw; }
+
+.paused {
+  animation-play-state: paused; }
+
+.running {
+  animation-play-state: running; }
+
+/*# sourceMappingURL=output.css.map */

@@ -1,0 +1,9 @@
+@mixin float-out() {
+
+  // @if $direction == left {
+    transform: translateX(-100px);
+  // }
+  // @if $direction == right {
+  //   transform: translateX(100vw);
+  // }
+}
