@@ -7,8 +7,17 @@ body {
   cursor: url('../img/flashlight.png'), auto;
 }
 
-.frame {
-  background-image: url('../img/bg-foyer.jpg');
+.lights-on {
+  background-image: url('../img/rooms/entrance.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.lights-out {
+  background-image: url('../img/rooms/entrance.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

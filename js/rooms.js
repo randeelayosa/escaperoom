@@ -1,5 +1,8 @@
 $(document).ready(function(){
-  let container = document.querySelector('.frame');
+  setTimeout(function(){
+    
+  },10000)
+  let container = document.querySelector('.lights-out');
   const RADIUS = 200;
 
   document.addEventListener('mousemove', function (event) {

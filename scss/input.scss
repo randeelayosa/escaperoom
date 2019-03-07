@@ -51,10 +51,6 @@ body{
   background-color: black;
 }
 
-.content{
-  // position: relative;
-  // overflow:hidden;
-}
 
 .trees img{
   position: fixed;
@@ -72,22 +68,21 @@ body{
   &:nth-child(3n){
     left:100px;
     bottom:500px;
-    // border: 1px solid red;
   }
   &:nth-child(4n){
     right:100px;
-    // border: 1px solid red;
   }
   &:nth-child(5n){
     left:200px;
-    // border: 1px solid red;
   }
+}
 
+.ghost{
+  width:50px;
 }
 
 .pairOne{
   width: 60vw;
-  // border: 1px solid red;
 }
 .pairTwo{
   width: 50vw;

@@ -48,6 +48,9 @@ body {
   .trees img:nth-child(5n) {
     left: 200px; }
 
+.ghost {
+  width: 50px; }
+
 .pairOne {
   width: 60vw; }
 
