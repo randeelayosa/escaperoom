@@ -4,49 +4,106 @@ body {
   height: 100vh;
   padding: 0;
   margin: 0;
-  cursor: url('../img/flashlight.png'), auto;
+  cursor: url('../img/cursors/flashlight.png'), auto;
+}
+
+// .lights- {
+//   background-image: url('../img/rooms/entrance.jpg');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   width: 100vw;
+//   height: 100vh;
+// }
+
+#entrance{
+  background-image: url('../img/rooms/entrance.jpg');
+}
+
+#hallway{
+  background-image: url('../img/rooms/hallway.jpg');
+}
+
+#attic{
+  background-image: url('../img/rooms/attic-light.jpg');
+}
+
+#upperstairs{
+  background-image: url('../img/rooms/hallway-stairs.jpg');
+}
+
+#room{
+  background-image: url('../img/rooms/bedroom.jpg');
+}
+
+#living-room{
+  background-image: url('../img/rooms/living-room.jpg');
+}
+
+#landing{
+  background-image: url('../img/rooms/landing.jpg');
 }
 
 .lights-on {
-  background-image: url('../img/rooms/entrance.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100vw;
   height: 100vh;
-}
-
-.lights-out {
-  background-image: url('../img/rooms/entrance.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
-
   -webkit-clip-path: circle(80px);
   clip-path: circle(80px);
   z-index: 5;
 }
 
-// h1{
-// }
-// .circle-follow {
-//   border:2px solid red;
-// 	position :absolute;
-// 	overflow : hidden;
-// 	background-color: transparent;
-// 	width :320px;
-// 	height: 320px;
-//     top:calc( 50% - 160px);
-//     left:calc( 50% - 160px);
-//     -webkit-border-radius: 160px;
-//     border-radius: 160px;
-//     -webkit-transition: opacity 0.3s cubic-bezier(0.52, 0.01, 0.16, 1);
-//     transition: opacity 0.3s cubic-bezier(0.52, 0.01, 0.16, 1);
-//     opacity : 0;
-// }
-//
-// .circle-follow.moving {
-// 	opacity : 1;
-// }
+
+.top{
+  cursor: n-resize;
+  position:absolute;
+  top:0;
+  left:50%;
+  width:200px;
+  height:200px;
+}
+
+.down{
+  cursor: s-resize;
+  position:absolute;
+  bottom:0;
+  left:50%;
+  width:200px;
+  height:200px;
+}
+
+.right{
+  cursor: e-resize;
+  position:absolute;
+  top:50%;
+  right:0;
+  width:200px;
+  height:200px;
+}
+
+.left{
+  cursor: w-resize;
+  position:absolute;
+  top:50%;
+  left:0;
+  width:200px;
+  height:200px;
+}
+
+.dialogue{
+  opacity:0;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity:0;
+    transform: scale(5);
+  }
+  to{
+    opacity:1;
+    transform: scale(1);
+  }
+}
