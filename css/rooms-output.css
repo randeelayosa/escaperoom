@@ -6,6 +6,9 @@ body {
   margin: 0;
   cursor: url("../img/cursors/flashlight.png"), auto; }
 
+#letter {
+  background-image: url("../img/rooms/letter.jpg"); }
+
 #entrance {
   background-image: url("../img/rooms/entrance.jpg"); }
 
@@ -38,7 +41,7 @@ body {
   z-index: 5; }
 
 .top {
-  cursor: n-resize;
+  cursor: url("../img/cursors/arrow-up.png"), auto;
   position: absolute;
   top: 0;
   left: 50%;
@@ -46,7 +49,7 @@ body {
   height: 200px; }
 
 .down {
-  cursor: s-resize;
+  cursor: url("../img/cursors/arrow-down.png"), auto;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -54,7 +57,7 @@ body {
   height: 200px; }
 
 .right {
-  cursor: e-resize;
+  cursor: url("../img/cursors/arrow-right.png"), auto;
   position: absolute;
   top: 50%;
   right: 0;
@@ -62,7 +65,7 @@ body {
   height: 200px; }
 
 .left {
-  cursor: w-resize;
+  cursor: url("../img/cursors/arrow-left.png"), auto;
   position: absolute;
   top: 50%;
   left: 0;
@@ -70,15 +73,101 @@ body {
   height: 200px; }
 
 .dialogue {
-  opacity: 0;
-  animation: fadeIn 3s; }
+  opacity: 0; }
 
-@keyframes fadeIn {
-  from {
+@keyframes blink {
+  0% {
+    transform: rotateX(90deg);
+    opacity: .25; }
+  20% {
+    transform: rotateX(60deg);
+    opacity: .5; }
+  40% {
+    transform: rotateX(40deg);
+    opacity: .75; }
+  60% {
+    transform: rotateX(0deg);
+    opacity: 1; }
+  80% {
+    transform: rotateX(40deg);
+    opacity: .75; }
+  90% {
+    transform: rotateX(60deg);
+    opacity: .5; }
+  100% {
+    transform: rotateX(90deg);
+    opacity: .25; } }
+.evil-eyes {
+  position: absolute;
+  animation: blink 5s linear;
+  opacity: 0; }
+
+#understairs {
+  left: 52%;
+  top: 37%;
+  animation-iteration-count: 2; }
+
+#underright {
+  right: 30%;
+  bottom: 30%;
+  animation-delay: 2s;
+  animation-iteration-count: 3; }
+
+#underleft {
+  left: 40%;
+  bottom: 30%;
+  animation-iteration-count: infinite; }
+
+#abovestairs {
+  left: 50%;
+  top: 10%;
+  animation-delay: 2s;
+  animation-iteration-count: infinite; }
+
+#aboveleft {
+  left: 25%;
+  top: 20%;
+  animation-delay: 4s;
+  animation-iteration-count: infinite; }
+
+@keyframes casper {
+  0% {
+    transform: translate(0, 0) scale(4);
+    opacity: 1; }
+  25% {
+    transform: translate(-200px, -100px) scale(5);
+    opacity: 1; }
+  50% {
+    transform: translate(-400px, 50px) scale(4);
+    opacity: 1; }
+  75% {
+    transform: translate(-600px, -100px) scale(5);
+    opacity: 1; }
+  100% {
+    transform: translate(-800px, 50px) scale(4);
+    opacity: 0; } }
+#end-ghost {
+  transform: scale(4);
+  position: absolute;
+  bottom: 30%;
+  right: 30%;
+  animation: casper 10s linear infinite; }
+  #end-ghost:hover {
+    animation-play-state: paused; }
+    #end-ghost:hover p {
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 0.5); }
+  #end-ghost p {
+    font-size: 0.25rem;
+    position: absolute;
+    top: -20px;
     opacity: 0;
-    transform: scale(5); }
-  to {
-    opacity: 1;
-    transform: scale(1); } }
+    transition: opacity 3s; }
+
+#bed-door {
+  position: absolute;
+  left: 50%;
+  bottom: 40%;
+  cursor: url("../img/cursors/arrow-up.png"), auto; }
 
 /*# sourceMappingURL=rooms-output.css.map */
