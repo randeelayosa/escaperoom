@@ -147,3 +147,12 @@ body{
 .running{
   animation-play-state:running;
 }
+
+#start{
+  position: absolute;
+  bottom: 8%;
+  left: 45%;
+  height: 150px;
+  width: 150px;
+  cursor: url('../img/cursors/arrow-up.png'), auto;
+}
