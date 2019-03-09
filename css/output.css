@@ -1,111 +1,180 @@
 @keyframes walk-right {
   0% {
-    transform: scale(1) translate(0, 0); }
+    transform: scale(1) translate(0, 0);
+  }
   25% {
-    transform: scale(1.5) translate(40vw, -100px); }
+    transform: scale(1.5) translate(40vw, -100px);
+  }
   50% {
-    transform: scale(2) translate(60vw, -200px); }
+    transform: scale(2) translate(60vw, -200px);
+  }
   75% {
-    transform: scale(2.5) translate(80vw, -300px); }
+    transform: scale(2.5) translate(80vw, -300px);
+  }
   100% {
-    transform: scale(3) translate(100vw, -300px); } }
+    transform: scale(3) translate(100vw, -300px);
+  }
+}
 @keyframes walk-left {
   0% {
-    transform: scale(1) translate(0, 0); }
+    transform: scale(1) translate(0, 0);
+  }
   25% {
-    transform: scale(1.5) translate(-40vw, -100px); }
+    transform: scale(1.5) translate(-40vw, -100px);
+  }
   50% {
-    transform: scale(2) translate(-60vw, -200px); }
+    transform: scale(2) translate(-60vw, -200px);
+  }
   75% {
-    transform: scale(2.5) translate(-80vw, -300px); }
+    transform: scale(2.5) translate(-80vw, -300px);
+  }
   100% {
-    transform: scale(3) translate(-100vw, -300px); } }
+    transform: scale(3) translate(-100vw, -300px);
+  }
+}
 @keyframes house-grow {
   from {
-    transform: scale(1); }
+    transform: scale(1);
+  }
   to {
-    transform: scale(3); } }
+    transform: scale(3);
+  }
+}
 body {
   height: 100vh;
-  background-color: black; }
+  background-color: black;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/table.png");
+  background-size: cover;
+}
+
+.letter {
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.letter:hover {
+  transform: rotateY(180deg);
+}
+
+#letter-front, #letter-back {
+  width: 50vw;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+#letter-back {
+  transform: rotateY(180deg);
+}
 
 .trees img {
   position: fixed;
-  bottom: 0px; }
-  .trees img:nth-child(odd) {
-    right: 0;
-    margin-right: 30px;
-    animation: walk-right 30s linear forwards; }
-  .trees img:nth-child(even) {
-    left: 0;
-    margin-right: 30px;
-    animation: walk-left 30s linear forwards; }
-  .trees img:nth-child(3n) {
-    left: 100px;
-    bottom: 500px; }
-  .trees img:nth-child(4n) {
-    right: 100px; }
-  .trees img:nth-child(5n) {
-    left: 200px; }
+  bottom: 0px;
+}
+.trees img:nth-child(odd) {
+  right: 0;
+  margin-right: 30px;
+  animation: walk-right 30s linear forwards;
+}
+.trees img:nth-child(even) {
+  left: 0;
+  margin-right: 30px;
+  animation: walk-left 30s linear forwards;
+}
+.trees img:nth-child(3n) {
+  left: 100px;
+  bottom: 500px;
+}
+.trees img:nth-child(4n) {
+  right: 100px;
+}
+.trees img:nth-child(5n) {
+  left: 200px;
+}
 
 .ghost {
-  width: 50px; }
+  width: 50px;
+}
 
 .pairOne {
-  width: 60vw; }
+  width: 60vw;
+}
 
 .pairTwo {
-  width: 50vw; }
+  width: 50vw;
+}
 
 .pairThree {
-  width: 40vw; }
+  width: 40vw;
+}
 
 .pairFour {
-  width: 30vw; }
+  width: 30vw;
+}
 
 .pairFive {
-  width: 20vw; }
+  width: 20vw;
+}
 
 .flip {
-  transform: rotateY(-180deg); }
+  transform: rotateY(-180deg);
+}
 
 .stagger20 {
-  left: 20%; }
+  left: 20%;
+}
 
 .stagger40 {
-  right: 40%; }
+  right: 40%;
+}
 
 .stagger60 {
-  left: 60%; }
+  left: 60%;
+}
 
 .house-front {
   position: relative;
   width: 100vw;
   height: 500px;
   animation: house-grow 40s forwards linear;
-  background-image: linear-gradient(#333 10%, #000000); }
-  .house-front img {
-    position: absolute;
-    width: 300px;
-    bottom: 0;
-    margin-right: 20px; }
-    .house-front img:nth-child(3) {
-      left: 15%; }
-    .house-front img:nth-child(4) {
-      right: 15%;
-      bottom: 5%; }
-    .house-front img:nth-child(5) {
-      right: 0; }
-  .house-front #house {
-    width: 40%;
-    left: 30%;
-    bottom: 8%; }
+  background-image: linear-gradient(#333 10%, #000000);
+}
+.house-front img {
+  position: absolute;
+  width: 300px;
+  bottom: 0;
+  margin-right: 20px;
+}
+.house-front img:nth-child(3) {
+  left: 15%;
+}
+.house-front img:nth-child(4) {
+  right: 15%;
+  bottom: 5%;
+}
+.house-front img:nth-child(5) {
+  right: 0;
+}
+.house-front #house {
+  width: 40%;
+  left: 30%;
+  bottom: 8%;
+}
 
 .paused {
-  animation-play-state: paused; }
+  animation-play-state: paused;
+}
 
 .running {
-  animation-play-state: running; }
+  animation-play-state: running;
+}
 
 #start {
   position: absolute;
@@ -113,6 +182,7 @@ body {
   left: 45%;
   height: 150px;
   width: 150px;
-  cursor: url("../img/cursors/arrow-up.png"), auto; }
+  cursor: url("../img/cursors/arrow-up.png"), auto;
+}
 
 /*# sourceMappingURL=output.css.map */
