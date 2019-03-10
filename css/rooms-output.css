@@ -57,6 +57,14 @@ body {
   z-index: 5;
 }
 
+.inventory {
+  position: absolute;
+}
+.inventory img {
+  transform: scale(0.5);
+  display: none;
+}
+
 .top {
   cursor: url("../img/cursors/arrow-up.png"), auto;
   position: absolute;

@@ -7,6 +7,7 @@ $(document).ready(function(){
     $('#friend-ghost p').text("You found my dolly! Thank you! I'll trade you for this key!");
     $('#friend-ghost').click( function(){
       sessionStorage.inventory+=',key';
+      sessionStorage.inventory.indexOf('doll')
       $('.doll').show();
     })
   }
