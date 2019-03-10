@@ -4,33 +4,49 @@ body {
   height: 100vh;
   padding: 0;
   margin: 0;
-  cursor: url("../img/cursors/flashlight.png"), auto; }
+  cursor: url("../img/cursors/flashlight.png"), auto;
+}
 
 #letter {
-  background-image: url("../img/rooms/letter.jpg"); }
+  background-image: url("../img/rooms/letter.jpg");
+}
 
 #entrance {
-  background-image: url("../img/rooms/entrance.jpg"); }
+  background-image: url("../img/rooms/entrance.jpg");
+}
 
 #hallway {
-  background-image: url("../img/rooms/hallway.jpg"); }
+  background-image: url("../img/rooms/hallway.jpg");
+}
 
 #attic {
-  background-image: url("../img/rooms/attic-light.jpg"); }
+  background-image: url("../img/rooms/attic-no-doll.jpg");
+}
+
+.doll {
+  position: absolute;
+  width: 60px;
+  left: 20%;
+  bottom: 20%;
+}
 
 #upperstairs {
-  background-image: url("../img/rooms/hallway-stairs.jpg"); }
+  background-image: url("../img/rooms/hallway-stairs.jpg");
+}
 
 #room {
-  background-image: url("../img/rooms/bedroom.jpg"); }
+  background-image: url("../img/rooms/bedroom.jpg");
+}
 
 #living-room {
-  background-image: url("../img/rooms/living-room.jpg"); }
+  background-image: url("../img/rooms/living-room.jpg");
+}
 
 #landing {
-  background-image: url("../img/rooms/landing.jpg"); }
+  background-image: url("../img/rooms/landing.jpg");
+}
 
-.lights-on {
+.lights-off {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -38,7 +54,8 @@ body {
   height: 100vh;
   -webkit-clip-path: circle(80px);
   clip-path: circle(80px);
-  z-index: 5; }
+  z-index: 5;
+}
 
 .top {
   cursor: url("../img/cursors/arrow-up.png"), auto;
@@ -46,7 +63,8 @@ body {
   top: 0;
   left: 50%;
   width: 200px;
-  height: 200px; }
+  height: 200px;
+}
 
 .down {
   cursor: url("../img/cursors/arrow-down.png"), auto;
@@ -54,7 +72,8 @@ body {
   bottom: 0;
   left: 50%;
   width: 200px;
-  height: 200px; }
+  height: 200px;
+}
 
 .right {
   cursor: url("../img/cursors/arrow-right.png"), auto;
@@ -62,7 +81,8 @@ body {
   top: 50%;
   right: 0;
   width: 200px;
-  height: 200px; }
+  height: 200px;
+}
 
 .left {
   cursor: url("../img/cursors/arrow-left.png"), auto;
@@ -70,104 +90,137 @@ body {
   top: 50%;
   left: 0;
   width: 200px;
-  height: 200px; }
+  height: 200px;
+}
 
 .dialogue {
-  opacity: 0; }
+  opacity: 0;
+}
 
 @keyframes blink {
   0% {
     transform: rotateX(90deg);
-    opacity: .25; }
+    opacity: 0.25;
+  }
   20% {
     transform: rotateX(60deg);
-    opacity: .5; }
+    opacity: 0.5;
+  }
   40% {
     transform: rotateX(40deg);
-    opacity: .75; }
+    opacity: 0.75;
+  }
   60% {
     transform: rotateX(0deg);
-    opacity: 1; }
+    opacity: 1;
+  }
   80% {
     transform: rotateX(40deg);
-    opacity: .75; }
+    opacity: 0.75;
+  }
   90% {
     transform: rotateX(60deg);
-    opacity: .5; }
+    opacity: 0.5;
+  }
   100% {
     transform: rotateX(90deg);
-    opacity: .25; } }
+    opacity: 0.25;
+  }
+}
 .evil-eyes {
   position: absolute;
   animation: blink 5s linear;
-  opacity: 0; }
+  opacity: 0;
+}
 
 #understairs {
   left: 52%;
   top: 37%;
-  animation-iteration-count: 2; }
+  animation-iteration-count: 2;
+}
 
 #underright {
   right: 30%;
   bottom: 30%;
   animation-delay: 2s;
-  animation-iteration-count: 3; }
+  animation-iteration-count: 3;
+}
 
 #underleft {
   left: 40%;
   bottom: 30%;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+}
 
 #abovestairs {
   left: 50%;
   top: 10%;
   animation-delay: 2s;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+}
 
 #aboveleft {
   left: 25%;
   top: 20%;
   animation-delay: 4s;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+}
 
 @keyframes casper {
   0% {
     transform: translate(0, 0) scale(4);
-    opacity: 1; }
+    opacity: 1;
+  }
   25% {
     transform: translate(-200px, -100px) scale(5);
-    opacity: 1; }
+    opacity: 1;
+  }
   50% {
     transform: translate(-400px, 50px) scale(4);
-    opacity: 1; }
+    opacity: 1;
+  }
   75% {
     transform: translate(-600px, -100px) scale(5);
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
     transform: translate(-800px, 50px) scale(4);
-    opacity: 0; } }
-#end-ghost {
+    opacity: 0;
+  }
+}
+#friend-ghost {
   transform: scale(4);
   position: absolute;
   bottom: 30%;
   right: 30%;
-  animation: casper 10s linear infinite; }
-  #end-ghost:hover {
-    animation-play-state: paused; }
-    #end-ghost:hover p {
-      opacity: 1;
-      background-color: rgba(255, 255, 255, 0.5); }
-  #end-ghost p {
-    font-size: 0.25rem;
-    position: absolute;
-    top: -20px;
-    opacity: 0;
-    transition: opacity 3s; }
+  animation: casper 10s linear infinite;
+}
+#friend-ghost:hover {
+  animation-play-state: paused;
+}
+#friend-ghost:hover p {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#friend-ghost p {
+  font-size: 0.25rem;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity 3s;
+}
+#friend-ghost .doll {
+  position: absolute;
+  width: 20px;
+  left: 20%;
+  bottom: 20%;
+}
 
 #bed-door {
   position: absolute;
   left: 50%;
   bottom: 40%;
-  cursor: url("../img/cursors/arrow-up.png"), auto; }
+  cursor: url("../img/cursors/arrow-up.png"), auto;
+}
 
 /*# sourceMappingURL=rooms-output.css.map */

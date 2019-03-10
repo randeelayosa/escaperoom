@@ -28,7 +28,13 @@ body {
 }
 
 #attic{
-  background-image: url('../img/rooms/attic-light.jpg');
+  background-image: url('../img/rooms/attic-no-doll.jpg');
+}
+.doll {
+  position:absolute;
+  width:60px;
+  left:20%;
+  bottom:20%;
 }
 
 #upperstairs{
@@ -47,7 +53,7 @@ body {
   background-image: url('../img/rooms/landing.jpg');
 }
 
-.lights-on {
+.lights-off {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -192,15 +198,12 @@ body {
   }
 }
 
-#end-ghost{
+#friend-ghost{
   transform: scale(4);
   position: absolute;
   bottom: 30%;
   right: 30%;
   animation: casper 10s linear infinite;
-  img{
-
-  }
   &:hover{
     animation-play-state:paused;
     p{
@@ -211,9 +214,15 @@ body {
   p{
     font-size:0.25rem;
     position:absolute;
-    top:-20px;
+    top:0;
     opacity:0;
     transition:opacity 3s;
+  }
+  .doll {
+    position:absolute;
+    width:20px;
+    left:20%;
+    bottom:20%;
   }
 }
 
