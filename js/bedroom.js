@@ -1,13 +1,13 @@
 $(document).ready(function(){
   $('.doll').hide();
-  if(sessionStorage.inventory.indexOf('key')>=0){
+  if(sessionStorage.cabKey=="true"){
     $('.doll').show();
     $('#friend-ghost p').text("Thanks Again! Did you use the key?");
-  } else if(sessionStorage.inventory.indexOf('doll')>=0){
+  } else if(sessionStorage.doll=="true"){
     $('#friend-ghost p').text("You found my dolly! Thank you! I'll trade you for this key!");
     $('#friend-ghost').click( function(){
-      sessionStorage.inventory+=',key';
-      sessionStorage.inventory.indexOf('doll')
+      sessionStorage.cabKey="true";
+      sessionStorage.doll="false";
       $('.doll').show();
     })
   }

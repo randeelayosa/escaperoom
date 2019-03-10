@@ -1,2 +1,5 @@
 sessionStorage.battery=2000;
-sessionStorage.inventory=["flashlight","batteries"];
+sessionStorage.doll=false;
+sessionStorage.cabKey=false;
+sessionStorage.letter=false;
+sessionStorage.amulet=false;

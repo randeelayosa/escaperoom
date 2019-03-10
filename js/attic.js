@@ -1,5 +1,9 @@
 $(document).ready(function(){
+  if(sessionStorage.doll=="true"||sessionStorage.cabKey=="true"){
+      $('.doll').hide();
+  }
   $('.doll').click(function(){
-      sessionStorage.inventory+=",doll";
+      sessionStorage.doll="true";
+      $('.doll').hide();
     });
 })

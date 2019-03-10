@@ -1,8 +1,16 @@
 $(document).ready(function(){
   var showInventory= function(){
-      if(sessionStorage.inventory.indexOf('doll')>=0){
-        $('.doll').hide();
+      if (sessionStorage.doll=="true"){
         $('#inv-doll').show();
+      }
+      if (sessionStorage.cabKey=="true"){
+        $('#inv-key').show();
+      }
+      if (sessionStorage.letter=="true"){
+        $('#inv-letter').show();
+      }
+      if (sessionStorage.amulet=="true"){
+        $('#inv-amulet').show();
       }
     }
       showInventory();
