@@ -1,6 +1,16 @@
 $(document).ready(function(){
-  $('.doll').hide();
-  $('.key').hide();
+  $('#chest .dialogue').hide();
+  $('#chest').click(function(){
+    if(sessionStorage.cabKey=="false"){
+      $('#chest .dialogue').show();
+    }
+    if(sessionStorage.cabKey=="true"){
+      $('#chest .dialogue').text("You unlocked the chest, and found a letter. It describes the plot to murder your great aunt. Maybe now she will help?");
+      $('#chest .dialogue').show();
+      sessionStorage.cabKey=="false";
+      sessionStorage.letter=="true";
+    }
+  })
   if(sessionStorage.cabKey=="true"){
     $('.doll').show();
     $('#friend-ghost p').text("Thanks Again! Did you use the key?");

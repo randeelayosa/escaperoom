@@ -9,8 +9,8 @@ $(document).ready(function(){
       if (sessionStorage.letter=="true"){
         $('#inv-letter').show();
       }
-      if (sessionStorage.amulet=="true"){
-        $('#inv-amulet').show();
+      if (sessionStorage.crystal=="true"){
+        $('#inv-crystal').show();
       }
     }
       showInventory();
