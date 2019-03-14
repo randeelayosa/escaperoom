@@ -51,6 +51,12 @@ body{
   background-color: black;
 }
 
+.hover-me{
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:5;
+}
 .table{
 position:relative;
 width:100%;
@@ -64,7 +70,7 @@ background-size:cover;
     transition: transform 1s;
     transform-style: preserve-3d;
 }
-.letter-flip:hover .letter{
+.hover-me:hover .letter{
   transform: rotateY(180deg);
 }
 #letter-front , #letter-back{
@@ -76,6 +82,7 @@ background-size:cover;
 #letter-back{
 transform: rotateY(180deg);
 }
+
 
 
 .trees img{
@@ -159,26 +166,15 @@ transform: rotateY(180deg);
       right: 0;
     }
   }
-  #house{
-    width: 40%;
-    left:30%;
-    bottom: 8%;
-  }
 }
 
-.paused{
-  animation-play-state:paused;
-}
-
-.running{
-  animation-play-state:running;
-}
-
-#start{
-  position: absolute;
+#house{
+  width: 40%;
+  left:30%;
   bottom: 8%;
-  left: 45%;
-  height: 150px;
-  width: 150px;
+}
+#start{
+  width:100%;
+  height:100%;
   cursor: url('../img/cursors/arrow-up.png'), auto;
 }

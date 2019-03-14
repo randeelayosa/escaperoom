@@ -310,18 +310,37 @@ body {
   }
 }
 
-#chest{
+#aunt-ghost{
   position:absolute;
   right:0;
-  bottom:5%;
-  img{
-    width:20%;
+  bottom:0;
+  #aunt{
+    width:100px;
+    height:500px;
   }
-  .dialogue{
-    background-color: rgba(255,255,255,0.5);
-    padding:10px;
+  #chest{
+    width:200px;
+  }
+  &:hover{
+    .dialogue{
+      opacity:1;
+    }
   }
 }
+.dialogue{
+  position:fixed;
+  right:10%;
+  top:50%;
+  opacity:0;
+  max-width:100px;
+  background-color: rgba(255,255,255,0.5);
+  padding:10px;
+  transition:opacity 1s;
+  border:2px solid gray;
+  border-radius:10px;
+}
+
+
 
 #bed-door{
   position: absolute;
