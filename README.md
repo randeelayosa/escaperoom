@@ -1,16 +1,48 @@
-# Haunted-house
+# Haunted House
 
-### Contributors 
-Matt Groberg and Randee Layosa
+#### _Front-End Development/UI - Week 4 - 3.5.19_
 
-_This game was created to practice CSS animations. The user uses a mouse to navigate a haunted house, using a clipping mask to mimic a flashlight_
+#### By _**Randee Layosa and Matt Groberg**_
 
-It is not currently a complete game, but is ment more for demonstrating creative UI design. 
+![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-### Setup
-To view the site on gh-pages click <a href="https://grobergm.github.io/haunted-house">this</a> link to view the deployed project on gh-pages.
+## Description
 
-Alternatively, you can clone this repository, and open the index.html file to start. 
+_This app game uses CSS animations to bring the user an immersive haunted house experience. The user interacts with the app by navigate through the house by flashlight (a clipping mask around the mouse to mimic a flashlight), searching for clues to help the trapped ghost in hopes that it will help you escape. The game is not currently complete, but the app is meant more for demonstrating creative UI design._
+
+## Preview
+<p align="center">Screenshots</p>
+<p align="center">
+<img src="img/splash.png" width="500" height="477" title="Screenshot of the opening splash page">
+<img src="img/opening.png" width="500" height="472" title="Screenshot of the haunted house opener">
+<img src="img/foyer.png" width="500" height="473" title="Screenshot of the foyer with mouse clipping mask">
+<img src="img/ghost3.png" width="500" height="453" title="Screenshot of the ghost">
+</p>
+
+## Technologies Used
+
+  * _JavaScript_
+  * _CSS/Sass_
+  * _HTML_
+
+## Setup/Installation Requirements
+
+#### To open and view this project file:
+1. Clone this GitHub repository https://github.com/randeelayosa/hauntedhouse.git to your Desktop.
+  * Install git onto your computer if it isn't already.
+  * To clone the project down to your desktop, open your Terminal, and enter the following commands:
+  ```
+  cd desktop
+  git clone https://github.com/randeelayosa/hauntedhouse.git
+  cd haunted-house
+  atom .
+  ```
+  * _You can use another text editor if Atom is not your preferred program._
+2. To view the live site, click the `index.html` file in the left side menu when you open the project in Atom. Drag and drop the index.html tab into the tab area of Chrome or the browser of your choice._
 
 ### Legal
-MIT Liscence Matt Groberg and Randee Layosa 2019. 
+
+*This software is licensed under MIT license.*
+
+Copyright (c) 2019 **_Randee Layosa and Matt Groberg_**
