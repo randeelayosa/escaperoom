@@ -14,10 +14,10 @@ _This app game uses CSS animations to bring the user an immersive haunted house 
 ## Preview
 <p align="center">Screenshots</p>
 <p align="center">
-<img src="img/splash.png" width="500" height="477" title="Screenshot of the opening splash page">
-<img src="img/opening.png" width="500" height="472" title="Screenshot of the haunted house opener">
-<img src="img/foyer.png" width="500" height="473" title="Screenshot of the foyer with mouse clipping mask">
-<img src="img/ghost3.png" width="500" height="453" title="Screenshot of the ghost">
+<img src="img/splash.png" width="350" height="334" title="Screenshot of the opening splash page">
+<img src="img/opening.png" width="350" height="330" title="Screenshot of the haunted house opener">
+<img src="img/foyer.png" width="350" height="331" title="Screenshot of the foyer with mouse clipping mask">
+<img src="img/ghost3.png" width="150" height="136" title="Screenshot of the ghost">
 </p>
 
 ## Technologies Used
@@ -29,7 +29,8 @@ _This app game uses CSS animations to bring the user an immersive haunted house 
 ## Setup/Installation Requirements
 
 #### To open and view this project file:
-1. Clone this GitHub repository https://github.com/randeelayosa/hauntedhouse.git to your Desktop.
+1. To view the live site, go to https://randeelayosa.github.io/hauntedhouse/.
+2. Or, to view the project file, clone this GitHub repository https://github.com/randeelayosa/hauntedhouse.git to your Desktop.
   * Install git onto your computer if it isn't already.
   * To clone the project down to your desktop, open your Terminal, and enter the following commands:
   ```
