@@ -4,9 +4,6 @@
 
 #### By _**Randee Layosa and Matt Groberg**_
 
-![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
 ## Description
 
 _This app game uses CSS animations to bring the user an immersive haunted house experience. The user interacts with the app by navigate through the house by flashlight (a clipping mask around the mouse to mimic a flashlight), searching for clues to help the trapped ghost in hopes that it will help you escape. The game is not currently complete, but the app is meant more for demonstrating creative UI design._
